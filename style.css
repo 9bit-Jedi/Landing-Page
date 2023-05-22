@@ -22,6 +22,7 @@ header {
 }
 
 .header_logo{
+    z-index: 2;
     height: 42px;  
 }
 
@@ -29,6 +30,8 @@ header {
     display: flex;
     flex-direction: row;
     align-items: center;
+
+    z-index: 2;
 }
 
 .header_right .chupa-do {
@@ -89,6 +92,9 @@ header {
 }
 
 .ham{
+    display: none;
+}
+.ham-menu{
     display: none;
 }
 
@@ -360,10 +366,6 @@ div:nth-of-type(2).safety-block-item {
 }
 
 @media (max-width: 600px) {
-
-    .body2{
-        /* height: 80vh; */
-    }
 
     .body2 .cont2{
         padding-top:0px ;
@@ -1012,11 +1014,6 @@ div:nth-of-type(2).safety-block-item {
     }
     .footer-container .websites .upper p{
         font-size: 36px;
-    }
-
-
-    .footer-container .websites .lower .logo {
-        /* margin: 10px; */
     }
 
 }
